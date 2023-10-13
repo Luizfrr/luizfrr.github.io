@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('Design\ sem\ nome.jpg');
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.cabecalho-link{
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabecalho-link a{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.cabecalho-link a:hover{
+    color: #3daeff;
+    transition: 0.3s all;
+}
+
+.cabecalho-link button{
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.logo i{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #3daeff;
+    color: #3daeff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-self: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+button{
+    color: #3daeff;
+    background: transparent;
+    border: solid 1px #3daeff;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3daeff;
+    color: white;
+    transition: 0.5s;
+}
+
+.container-text{
+    padding: 160px 0 0 120px;
+}
+
+.text h3{
+    color: white;
+    font-size: 20px;
+}
+
+.text h1{
+    color: white;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.text span{
+    color: #3daeff;
+}
+
+.text p{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 100px;
+}
+
+.redes-sociais a{
+    color: #3daeff;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.redes-sociais a:hover{
+    color: white;
+    transition: 0.5s;
+}
+
+.btn{
+    margin-top: 10px;
+}
