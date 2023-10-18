@@ -129,10 +129,10 @@ button:hover{
 }
 
 .imagem-direita{
-    float: right; /* Alinhe a imagem à direita */
-    margin-left: 20px; /* Adicione margem à esquerda para separar do conteúdo */
+    float: right; 
+    margin-left: 20px;
     margin-top: -250px;
-    width: 500px; /* Defina a largura desejada para a imagem */
-    height: auto; /* Mantenha a proporção da imagem */
+    width: 500px;
+    height: auto;
     clear: right;
 }
