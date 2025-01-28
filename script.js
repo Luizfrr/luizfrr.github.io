@@ -6,7 +6,7 @@ contato.addEventListener('click', function(event){
     window.open(urlcontato, '_blank');
 });
 
-const urlprojetos = 'https://github.com/Luizfrr/projetos/blob/main/README.md';
+const urlprojetos = 'https://drive.google.com/drive/folders/1EAi07_Xa-8jmkF2vHzGUL8d8Kzw0XBZz?usp=drive_link';
 const projetos = document.getElementById('projetos');
 projetos.addEventListener('click', function(event){
     event.preventDefault();
