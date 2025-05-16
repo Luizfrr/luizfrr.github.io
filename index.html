@@ -2,42 +2,152 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Minha apresentação</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body>
-    <div class="background">
-        <header>
-            <div class="cabecalho-link">
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="sobre.html" style="display: none;">Sobre</a>
+    <header class="grid grid-cols-4 p-4 bg-black/90 text-white">
+        <div class="col-span-2">
+            <ul>
+                <li class="space-x-4">
+                    <a href="https://github.com/Luizfrr"><i class="fi fi-brands-github text-4xl transition hover:text-gray-400"></i></a>
+                    <a href="https://www.linkedin.com/in/luizfrr/"><i class="fi fi-brands-linkedin text-4xl transition hover:text-gray-400"></i></a>
                 </li>
-                <button id="meucontato">Meu contato</button>
-            </div>
-        </header>
+            </ul>
+        </div>
+        <div class="col-span-2 flex justify-end">
+            <button class="bg-white rounded-xl text-black p-2 hover:bg-gray-700 hover:text-white"><a href="/files/cv.pdf">Download CV</a></button>
+        </div>
+    </header>
 
-        <div class="container-text">
-            <div class="text">
-                <h3>Olá pessoal</h3>
-                <h1>Eu sou <span>Luiz Guilherme</span></h1>
-                <p>Sou estudante de Desenvolvimento de Sistemas no SENAI, com um sólido entendimento em Python,
-                    estudando atualmente cybersegurança. Ao longo da minha jornada acadêmica, adquiri experiências
-                    com projetos pessoais, utilizando SQL e ferramentas como Git.
-                    Tenho uma habilidade para resolver problemas e uma capacidade de aprender novos conceitos
-                    rapidamente. Minha paixão pela área é o que me impulsiona a buscar uma carreira
-                    emocionante no desenvolvimento de software.</p>
-                <div class="redes-sociais">
-                    <a href="https://github.com/Luizfrr"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/luizfrr"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <button class="btn" id="projetos">Recursos</button>
-                <img class="imagem-direita" src="/eupng.png" alt="">
+    <section class="bg-black">
+        <div class="grid grid-cols-2 sm:grid-cols-3">
+            <div class="col-span-2 sm:col-span-1">
+                <img src="/imgs/fundo.jpeg" alt="" class="">
+            </div>
+
+            <div class="col-span-2 p-6 text-white py-16">
+                <p class="">Olá, meu nome é</p>
+                <h1 class="text-4xl font-medium">Luiz Guilherme</h1>
+                <p class="py-2 text-justify">Sou estudante de Desenvolvimento de Sistemas com foco em me tornar um desenvolvedor back-end. Tenho aprendido e aplicado conceitos práticos com tecnologias como Flask, SQLAlchemy, JavaScript e arquitetura MVC. Estou desenvolvendo projetos próprios para ganhar experiência e aprofundar meus conhecimentos. Compartilho minha jornada de aprendizado e estou sempre em busca de novos desafios. Quer saber como posso contribuir com o seu projeto? Confira meus projetos e meu currículo.</p>
+                <button class="bg-white rounded-xl mt-4 text-black p-4 cursor-pointer transition hover:bg-gray-700 hover:text-white"><a href="https://www.linkedin.com/in/luizfrr/">Se Conecte</a></button>
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+    <section class="bg-sky-50 py-8">
+        <div class="flex flex-col justify-center items-center p-4 py-14">
+            <h1 class="text-3xl font-medium text-black">Habilidades</h1>
+            <p class="py-4 text-black">Atualmente sou estudante na área de Desenvolvimento de Sistemas com foco em back-end, e venho desenvolvendo projetos próprios para aplicar <br> e fortalecer meus conhecimentos. Abaixo está uma visão geral das principais tecnologias e ferramentas com as quais tenho trabalhado.</p>
+        </div>
+
+        <div class="grid grid-cols-1  gap-8 m-10 sm:grid-cols-3">
+            <!--Icone 1-->
+            <div class="bg-white shadow-xl relative mt-12 sm:mt-2">
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black rounded-full w-28 h-28 text-white p-8 flex justify-center items-center">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="w-20 h-20 fill-current"><path d="m7.143 15.8 2.72 2.855-.725.689-2.711-2.847c-.571-.572-.571-1.517.009-2.097l2.708-2.752.713.701-2.711 2.755c-.193.193-.193.504-.003.694zm7.614-4.156-.701.713 2.802 2.752c.19.19.19.501-.003.694l-2.805 2.847.713.701 2.802-2.844c.58-.581.58-1.525-.003-2.108zm9.243-8.144v19.5h-24v-19.5c0-1.379 1.121-2.5 2.5-2.5h19c1.379 0 2.5 1.121 2.5 2.5zm-23 0v4.5h22v-4.5c0-.827-.673-1.5-1.5-1.5h-19c-.827 0-1.5.673-1.5 1.5zm22 18.5v-13h-22v13zm-19-16c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm3 0c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm3 0c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1z"/></svg>
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-20">
+                    <h3 class="font-medium text-3xl">Front-End</h3>
+                    <ul class="self-start px-10 py-6">
+                        <li>
+                            <a href="">✓ HTML5 & CSS3</a><br>
+                            <a href="">✓ Tailwind CSS</a><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Icone 2-->
+            <div class="bg-white shadow-xl relative mt-12 sm:mt-2">
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black rounded-full w-28 h-28 text-white p-8 flex justify-center items-center">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="w-20 h-20 fill-current"><path d="m17 15c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2zm0 3c-.551 0-1-.448-1-1s.449-1 1-1 1 .448 1 1-.449 1-1 1zm5.506.478-.646-.377c.094-.386.14-.748.14-1.101s-.046-.715-.14-1.101l.646-.377c.346-.202.593-.526.695-.914s.046-.792-.156-1.138c-.417-.714-1.337-.957-2.052-.539l-.64.374c-.537-.488-1.167-.851-1.853-1.068v-.738c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5 1.5v.738c-.687.217-1.316.58-1.853 1.068l-.641-.374c-.716-.417-1.635-.175-2.051.539-.202.346-.257.75-.156 1.138.102.388.349.712.695.914l.646.377c-.094.386-.14.748-.14 1.101s.046.715.14 1.101l-.646.377c-.346.202-.593.526-.695.914s-.046.792.156 1.138c.416.715 1.336.957 2.052.539l.64-.374c.537.488 1.167.852 1.853 1.067v.738c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5v-.738c.686-.216 1.316-.579 1.853-1.067l.641.374c.715.418 1.635.175 2.051-.539.202-.346.257-.75.156-1.138-.102-.388-.349-.712-.695-.914zm-.324 1.548c-.14.237-.447.317-.684.18l-.971-.567c-.201-.117-.458-.08-.617.09-.55.586-1.249.989-2.021 1.165-.228.052-.389.254-.389.487v1.12c0 .275-.224.5-.5.5s-.5-.225-.5-.5v-1.12c0-.233-.162-.436-.389-.487-.772-.176-1.471-.579-2.021-1.165-.097-.104-.23-.158-.365-.158-.086 0-.174.022-.252.068l-.97.567c-.238.138-.545.059-.684-.18-.14-.23-.055-.554.18-.685l.979-.571c.202-.117.295-.358.225-.581-.138-.44-.202-.818-.202-1.188s.064-.748.202-1.188c.07-.223-.023-.464-.225-.581l-.979-.571c-.235-.131-.32-.455-.18-.685.138-.238.445-.318.684-.18l.971.567c.2.118.458.08.617-.09.549-.586 1.249-.988 2.021-1.165.228-.052.389-.254.389-.487v-1.12c0-.276.224-.5.5-.5s.5.224.5.5v1.12c0 .233.161.436.389.487.773.177 1.472.579 2.021 1.165.16.17.417.208.617.09l.97-.567c.237-.138.545-.06.684.18.14.23.055.554-.18.685l-.979.571c-.202.117-.295.358-.225.581.138.44.202.818.202 1.188s-.064.748-.202 1.188c-.07.223.023.464.225.581l.979.571c.235.131.32.455.18.685zm-11.745 2.853c-.63.081-1.282.122-1.937.122-4.065 0-7.5-1.603-7.5-3.5v-2.851c1.419 1.411 4.213 2.351 7.5 2.351.276 0 .5-.224.5-.5s-.224-.5-.5-.5c-4.065 0-7.5-1.603-7.5-3.5v-2.851c1.419 1.411 4.213 2.351 7.5 2.351.276 0 .5-.224.5-.5s-.224-.5-.5-.5c-4.065 0-7.5-1.603-7.5-3.5v-2.851c1.419 1.411 4.213 2.351 7.5 2.351s6.081-.94 7.5-2.351v.851c0 .276.224.5.5.5s.5-.224.5-.5v-3c0-2.524-3.733-4.501-8.5-4.501s-8.5 1.977-8.5 4.5v15c0 2.523 3.733 4.5 8.5 4.5.697 0 1.391-.044 2.063-.13.274-.035.468-.286.433-.56s-.284-.467-.56-.433zm-1.937-21.879c4.065 0 7.5 1.603 7.5 3.5s-3.435 3.5-7.5 3.5-7.5-1.603-7.5-3.5 3.435-3.5 7.5-3.5z"/></svg>
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-20">
+                    <h3 class="font-medium text-3xl">Back-End</h3>
+                    <ul class="self-start px-10 py-6">
+                        <li>
+                            <a href="">✓ Python</a><br>
+                            <a href="">✓ Flask</a><br>
+                            <a href="">✓ SQLAlchemy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Icone 3-->
+                        
+            <div class="bg-white shadow-xl relative mt-12 sm:mt-2">
+                <div class="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black rounded-full w-28 h-28 text-white p-8 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-20 h-20 fill-current">
+                        <path d="m12,0C5.383,0,0,5.383,0,12s5.383,12,12,12,12-5.383,12-12S18.617,0,12,0Zm0,23c-6.065,0-11-4.935-11-11S5.935,1,12,1s11,4.935,11,11-4.935,11-11,11Zm-5-11c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm12,0c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm-6,0c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Z"/>
+                    </svg>
+                </div>
+
+                <div class="flex flex-col justify-center items-center py-20">
+                    <h3 class="font-medium text-3xl">Outros</h3>
+                    <ul class="self-start px-10 py-6">
+                        <li>
+                            <a href="">✓ Git & GitHub</a><br>
+                            <a href="">✓ Pacote Office</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-6">
+        <h1 class="font-medium text-3xl text-center">Projetos</h1>
+        <div class="grid grid-cols-1 gap-8 m-10 sm:grid-cols-3">
+            <div class="bg-white shadow-xl">
+                <img src="/imgs/todolistprint.png" alt="">
+                <div class="flex justify-center items-center">
+                    <h3 class="py-2 font-medium">To-Do-List WebSite</h3>
+                </div>
+                <div class="grid grid-cols-3 gap-2 p-4">
+                    <p class="text-center bg-black p-2 rounded-full text-white">Python</p>
+                    <p class="text-center bg-black p-2 rounded-full text-white">Flask</p>
+                    <p class="text-center bg-black p-2 rounded-full text-white">Tailwind</p>
+                </div>
+                <div class="flex justify-center items-center"><a href="https://github.com/Luizfrr/to-do-list" class=" transition hover:text-blue-500">Link</a></div>
+            </div>
+
+            <div class="bg-white shadow-xl">
+                <img src="/imgs/todolistprint.png" alt="" class="blur-[5px] brightness-50">
+                <div class="flex justify-center items-center">
+                    <h3 class="py-2 font-medium">Vazio</h3>
+                </div>
+                <div class="grid grid-cols-4 gap-2 p-4">
+                </div>
+            </div>
+
+            <div class="bg-white shadow-xl">
+                <img src="/imgs/todolistprint.png" alt="" class="blur-[5px] brightness-50">
+                <div class="flex justify-center items-center">
+                    <h3 class="py-2 font-medium">Vazio</h3>
+                </div>
+                <div class="grid grid-cols-4 gap-2 p-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+            <p class="text-sm">&copy; 2025 Luiz Guilherme. Todos os direitos reservados.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+            <a href="mailto:luizggfo@gmail.com" class="hover:text-gray-300 transition"><i class="fi fi-rr-envelope"></i> Email</a>
+            <a href="https://wa.me/5575983687107" class="hover:text-gray-300 transition"><i class="fi fi-brands-whatsapp"></i> Whatsapp</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
